@@ -6,7 +6,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/pedidos">Pedidos</router-link>
     </div>
-    </template>
+</template>
     
     <script> 
     export default {

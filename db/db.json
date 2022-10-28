@@ -36,29 +36,24 @@
         "tipo": "Veggie burger"
       }
     ],
-
-
-    "molhos-opcionais":[
+    "molhos-opcionais": [
       {
-          "id": 1,
-          "tipo": "Tomate"
+        "id": 1,
+        "tipo": "Tomate"
       },
       {
-          "id": 2,
-          "tipo": "Creme de Alho"
+        "id": 2,
+        "tipo": "Creme de Alho"
       },
       {
-          "id": 3,
-          "tipo": "Vinagre com tomate"
+        "id": 3,
+        "tipo": "Vinagre com tomate"
       },
       {
-          "id": 4,
-          "tipo": "Pimenta mexicana"
+        "id": 4,
+        "tipo": "Pimenta mexicana"
       }
-      
-
     ],
-
     "opcionais": [
       {
         "id": 1,
@@ -100,5 +95,40 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "Marco",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon",
+        "Tomate",
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "vvvv",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "nome": "rrrr",
+      "carne": "Picanha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 3
+    }
+  ]
 }

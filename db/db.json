@@ -149,6 +149,16 @@
       "opcionais": [],
       "status": "Solicitado",
       "id": 5
+    },
+    {
+      "nome": "mmmm",
+      "carne": "carne.tipo",
+      "pao": "pao.tipo",
+      "opcionais": [
+        "opcional.tipo"
+      ],
+      "status": "Solicitado",
+      "id": 6
     }
   ]
 }

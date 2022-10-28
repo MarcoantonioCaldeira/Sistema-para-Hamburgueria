@@ -23,7 +23,7 @@
             </div>
             <div>
               <select name="status" class="status" @change="updateBurger($event, burger.id)">
-                <option :value="s.tipo" v-for="s in status" :key="s.id" :selected="burger.status == s.tipo">
+                <option value="s.tipo" v-for="s in status" :key="s.id" selected="burger.status == s.tipo">
                   {{ s.tipo }}
                 </option>
               </select>
@@ -38,53 +38,80 @@
 </template>
 <script>
 export default{
-    name: "Pedidos"
+    name: "Dashboard",
+    data() {
+        return{
+            burgers: null,
+            burger_id: null,
+            status: []
+        }
+    },
+    methods: {
+        async getPedidos() {
+
+            const req = await fetch("htttp://localhost:3000/burgers");
+
+            const data = await req.json();
+
+            this.burgers = data;
+
+            console.log(this.burgers);
+
+            // resgatar os status
+            this.getStatus();
+
+        },
+        async getStatus() {
+
+            const req = await fetch("http://localhost:3000/status");
+
+            const data = await req.json();
+            
+            this.status = data;
+        }
+    },
+    mounted() {
+        this.getPedidos();
+    }
 }
 </script>
 <style>
 
-#burger-table{
-    max-width: 1220px;
+  #burger-table {
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-#burger-table-heafing,
-#burger-table-rows,
-.burger-table-row{
+  }
+  #burger-table-heading,
+  #burger-table-rows,
+  .burger-table-row {
     display: flex;
     flex-wrap: wrap;
-}
-
-#burger-table-heading {
+  }
+  #burger-table-heading {
     font-weight: bold;
     padding: 12px;
     border-bottom: 3px solid #333;
-}
-
-#burger-table-heading div,
-    .burger-table-row div{
-        width: 19%;
-    }
-
-.burger-table-row{
+  }
+  .burger-table-row {
     width: 100%;
     padding: 12px;
-    border-bottom: 1px solid #ccc;
-}
-
-#burger-table-heading .order-id,
-.burger-table-row .order-number{
+    border-bottom: 1px solid #CCC;
+  }
+  #burger-table-heading div,
+  .burger-table-row div {
+    width: 19%;
+  }
+  #burger-table-heading .order-id,
+  .burger-table-row .order-number {
     width: 5%;
-}
-
-select {
+  }
+  select {
     padding: 12px 6px;
     margin-right: 12px;
-}
-
-.delete-btn{
+  }
+  .delete-btn {
     background-color: #222;
-    color:#FCBA03;
+    color:#fcba03;
     font-weight: bold;
     border: 2px solid #222;
     padding: 10px;
@@ -92,10 +119,10 @@ select {
     margin: 0 auto;
     cursor: pointer;
     transition: .5s;
-}
-
-.delete-btn:hover{
-    background-color:transparent;
+  }
+  
+  .delete-btn:hover {
+    background-color: transparent;
     color: #222;
-}
+  }
 </style>

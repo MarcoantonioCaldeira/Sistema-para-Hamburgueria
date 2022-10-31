@@ -97,88 +97,16 @@
   ],
   "burgers": [
     {
-      "nome": "Marco",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
+      "nome": "Marco Antonio Caldeira",
+      "carne": "carne.tipo",
+      "pao": "pao.tipo",
       "opcionais": [
         "Bacon",
         "Tomate",
-        "Cheddar"
+        "Pepino"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 1
-    },
-    {
-      "nome": "vvvv",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "rrrr",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
-      "nome": "Marco",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "nome": null,
-      "carne": null,
-      "pao": null,
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 5
-    },
-    {
-      "nome": "mmmm",
-      "carne": "carne.tipo",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "opcional.tipo"
-      ],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "nome": null,
-      "carne": "carne.tipo",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "opcional.tipo"
-      ],
-      "status": "Solicitado",
-      "id": 7
-    },
-    {
-      "nome": null,
-      "carne": "carne.tipo",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "opcional.tipo"
-      ],
-      "status": "Solicitado",
-      "id": 8
     }
   ]
 }

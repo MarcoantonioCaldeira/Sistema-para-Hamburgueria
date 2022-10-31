@@ -17,8 +17,7 @@
     
     <style>
     #nav{
-        background-color: #222;
-        border-bottom: 4px solid #111;
+        background-color: rgb(224, 183, 92);
         padding: 15px 50px;
         display: flex;
         justify-content: flex-end;
@@ -36,7 +35,7 @@
       }
     
       #nav a{
-        color: #FCBA03;
+        color: #fffbfb;
         text-decoration:none;
         margin:12px;
         transition: .5s;

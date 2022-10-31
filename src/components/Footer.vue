@@ -13,9 +13,8 @@
   <style scoped>
     #footer {
       height: 200px;
-      background-color: #222;
-      border-top: 4px solid #111;
-      color: #fcba03;
+      background-color: rgb(224, 183, 92);
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;

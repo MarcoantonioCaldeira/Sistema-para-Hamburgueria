@@ -5,16 +5,16 @@
 </template>
 
 <script>
-
 export default {
     name: "Message",
     props: {
         msg: String
     }
 }
-
 </script>
+
 <style>
+
 .message-container{
     color: #004085;
     background-color: #cce5ff;

@@ -1,5 +1,6 @@
 <template> 
     <div id="burger-table" v-if="burgers">
+      <Message :msg="msg" v-show="msg" />
         <div>
           <div id="burger-table-heading">
             <div class="order-id">#:</div>
@@ -17,8 +18,10 @@
             <div>{{ burger.pao }}</div>
             <div>{{ burger.carne }}</div>
             <div>
-              <ul v-for="(opcional, index) in burger.opcionais" :key="index">
-                <li>{{ opcional }}</li>
+              <ul>
+                <li v-for="(opcional, index) in burger.opcionais" :key="index">
+                  {{ opcional }}
+                </li>
               </ul>
             </div>
             <div>
@@ -37,14 +40,21 @@
       </div>
 </template>
 <script>
+import Message from './Message.vue';
+
 export default{
     name: "Dashboard",
     data() {
         return{
             burgers: null,
             burger_id: null,
-            status: []
+            status: [],
+            msg: null
         }
+    },
+
+    components: {
+      Message
     },
     methods: {
         async getPedidos() {
@@ -71,19 +81,26 @@ export default{
 
         async deleteBurger(id) {
 
-        const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+            const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+              method: "DELETE"
+            });
 
-          method: "DELETE"
-        });
-        const res = await req.json()
+            const res = await req.json();
 
-        this.getPedidos()
+            this.msg = `Pedido removido com sucesso!!!`;
+
+            setTimeout(() => this.msg = "", 3000);
+
+            this.getPedidos();
         },
 
 
         async updateBurger(event, id) {
+
         const option = event.target.value;
+
         const dataJson = JSON.stringify({status: option});
+
         const req = await fetch(`http://localhost:3000/burgers/${id}`, {
           method: "PATCH",
           headers: { "Content-Type" : "application/json" },
@@ -92,13 +109,17 @@ export default{
         
         const res = await req.json()
 
-        console.log(res)
-      }
+        this.msg = `O pedido foi atualizado!!!`;
 
+        setTimeout(() => this.msg = "", 3000);
+
+        console.log(res);
     },
     mounted() {
         this.getPedidos()
     }
+}
+
 }
 </script>
 <style>

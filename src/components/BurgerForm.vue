@@ -53,14 +53,16 @@
     },
     methods: {
       async getIngredientes() {
-        const req = await fetch('http://localhost:3000/ingredientes')
-        const data = await req.json()
-        this.paes = data.paes
-        this.carnes = data.carnes
-        this.opcionaisdata = data.opcionais
+        const req = await fetch('http://localhost:3000/ingredientes');
+        const data = await req.json();
+        this.paes = data.paes;
+        this.carnes = data.carnes;
+        this.opcionaisdata = data.opcionais;
       },
       async createBurger(e) {
-        e.preventDefault()
+
+        e.preventDefault();
+
         const data = {
           nome: this.nome,
           carne: this.carne,
@@ -68,7 +70,9 @@
           opcionais: Array.from(this.opcionais),
           status: "Solicitado"
         }
-        const dataJson = JSON.stringify(data)    
+
+        const dataJson = JSON.stringify(data);
+
         const req = await fetch("http://localhost:3000/burgers", {
           method: "POST",
           headers: { "Content-Type" : "application/json" },

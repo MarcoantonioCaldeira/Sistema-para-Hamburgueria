@@ -4,7 +4,7 @@
       <form id="burger-form" method="POST" @submit="createBurger">
         <div class="input-container">
           <label for="nome">Nome do cliente:</label>
-          <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
+          <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome" required>
         </div>
         <div class="input-container">
           <label for="pao">Escolha o pão:</label>
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="input-container">
-          <input class="submit-btn" type="submit" value="Criar meu Burger!">
+          <input class="submit-btn" type="submit" value="Criar meu Burger">
         </div>
       </form>
     </div>
@@ -104,7 +104,6 @@
   <style scoped>
   #burger-form {
     max-width: 500px;
-    margin: 0 auto;
   }
   .input-container {
     display: flex;
@@ -116,11 +115,10 @@
     margin-bottom: 15px;
     color: #222;;
     padding: 5px 10px;
-    border-left: 4px solid #fcba03;
   }
   input, select {
-    padding: 5px 10px;
-    width: 300px;
+    padding: 12px 15px;
+    width: 400px;
   }
   #opcionais-container {
     flex-direction: row;
@@ -144,13 +142,14 @@
     font-weight: bold;
   }
   .submit-btn {
-    background-color: #222;
-    color:#fcba03;
+    background-color:#a0bb82;
+    border-radius: 5px;
+    color:white;
     font-weight: bold;
-    border: 2px solid #222;
-    padding: 10px;
+    border: 2px solid #a0bb82;
+    padding: 15 15px;
     font-size: 16px;
-    margin: 0 auto;
+    margin: -2%;
     cursor: pointer;
     transition: .5s;
   }

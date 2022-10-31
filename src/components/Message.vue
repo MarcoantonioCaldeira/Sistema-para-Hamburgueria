@@ -17,8 +17,8 @@ export default {
 
 .message-container{
     color: #004085;
-    background-color: #cce5ff;
-    border: 2px solid #b8daff;
+    background-color: #deeeff;
+    border: 2px solid #deeeff;
     border-radius: 5px;
     padding: 10px;
     max-width: 400px;

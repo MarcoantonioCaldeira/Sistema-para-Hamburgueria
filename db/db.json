@@ -97,15 +97,15 @@
   ],
   "burgers": [
     {
-      "nome": "Marco Antonio Caldeira",
+      "nome": "Marco ",
       "carne": "carne.tipo",
       "pao": "pao.tipo",
       "opcionais": [
-        "Bacon",
         "Tomate",
-        "Pepino"
+        "Bacon",
+        "Salame"
       ],
-      "status": "Em produção",
+      "status": "Solicitado",
       "id": 1
     }
   ]

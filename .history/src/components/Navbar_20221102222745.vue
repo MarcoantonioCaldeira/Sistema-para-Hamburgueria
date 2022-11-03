@@ -18,22 +18,20 @@
     <style>
     #nav{
         background-color: rgb(224, 183, 92);
-        height:70px;
-        padding: 15px 40px;
+        padding: 15px 50px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
       }
     
-      #nav{
+      #nav #logo-url{
         margin: auto;
         margin-left: 0;
       }
     
       #logo{
-        margin-left:-170vh;
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
       }
     
       #nav a{

@@ -25,13 +25,12 @@
         align-items: center;
       }
     
-      #nav{
+      #nav {
         margin: auto;
         margin-left: 0;
       }
     
       #logo{
-        margin-left:-170vh;
         width: 100px;
         height: 100px;
       }

@@ -31,7 +31,7 @@
       }
     
       #logo{
-        margin-left:-170vh;
+        margin-left:-100vh;
         width: 100px;
         height: 100px;
       }

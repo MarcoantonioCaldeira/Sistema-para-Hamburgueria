@@ -29,7 +29,7 @@ export default {
 <style>
   * {
     font-family: Helvetica;
-    font-weight: bold;
+    color: red;
     padding: 0;
     margin: 0;
     box-sizing: border-box;

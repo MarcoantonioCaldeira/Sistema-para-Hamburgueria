@@ -1,7 +1,7 @@
 <template>
     <div id="footer">
       <p>Make Your Burger &copy; 2021</p>
-      <div>
+      <div id="Footer-info">
         <a>Quem somos</a>
         <a>Nossos Termos</a>
         <a>Entre em contato conosco</a>
@@ -16,6 +16,25 @@
   </script>
   
   <style scoped>
+
+    p{
+      position:relative;
+      margin-left: 43%;
+      margin-top: 10%;
+      display: inline;
+    }
+
+    a{
+      position: relative;
+      margin: 0 10px;
+    }
+
+    #Footer-info{
+      height: 40px;
+      margin-top: 10%;
+      margin-left: -53%;
+    }
+
     #footer {
       height: 200px;
       background-color: rgb(224, 183, 92);

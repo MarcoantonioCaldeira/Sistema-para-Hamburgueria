@@ -153,8 +153,4 @@
     cursor: pointer;
     transition: .5s;
   }
-  .submit-btn:hover {
-    background-color: transparent;
-    color: #222;
-  }
 </style>

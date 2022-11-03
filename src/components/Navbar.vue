@@ -38,7 +38,6 @@
     
       #nav a{
         color: #604020;
-        font-siza: 160px;
         text-decoration:none;
         margin:12px;
         transition: .5s;

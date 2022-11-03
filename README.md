@@ -1,5 +1,9 @@
 # projeto-hamburgueria
 
+Hamburgueria MK Burger
+Sistema de gerenciamento desenvolvido em VueJs
+
+
 ## Project setup
 ```
 npm install

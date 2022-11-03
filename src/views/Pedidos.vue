@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="main-container">
-      <h1>Gerenciar pedidos:</h1>
+    <div class="main-container-2">
+      <h1 class="h1-component-pedido">Gerenciar pedidos:</h1>
       <Dashboard />
     </div>
   </div>
@@ -19,3 +19,15 @@ export default{
 }
 
 </script>
+<style>
+
+.h1-component-pedido{
+  margin-left: 12%;
+  margin-top: 7%;
+}
+
+.main-container-2{
+  height: 500px;
+}
+
+</style>

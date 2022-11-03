@@ -119,10 +119,11 @@
     margin-right: 12px;
   }
   .delete-btn {
-    background-color: #222;
-    color:#fcba03;
+    background-color: #a0bb82;
+    color:white;
     font-weight: bold;
-    border: 2px solid #222;
+    border-radius: 5px;
+    border: 2px solid;
     padding: 10px;
     font-size: 16px;
     margin: 0 auto;

@@ -97,13 +97,13 @@
   ],
   "burgers": [
     {
-      "nome": "Marco ",
+      "nome": "marco",
       "carne": "carne.tipo",
       "pao": "pao.tipo",
       "opcionais": [
-        "Tomate",
         "Bacon",
-        "Salame"
+        "Salame",
+        "Pepino"
       ],
       "status": "Solicitado",
       "id": 1

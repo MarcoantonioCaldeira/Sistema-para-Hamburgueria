@@ -18,20 +18,20 @@
   <style scoped>
 
     p{
-      position:relative;
+      position:absolute;
       margin-left: 43%;
       margin-top: 10%;
       display: inline;
     }
 
     a{
-      position: relative;
+      position: absolute;
+      margin-top: 10%;
       margin: 0 10px;
     }
 
     #Footer-info{
       height: 40px;
-      margin-top: 10%;
       margin-left: -53%;
     }
 
@@ -39,7 +39,6 @@
       height: 200px;
       background-color: rgb(224, 183, 92);
       color: #ffffff;
-      display: flex;
       bottom: 0;
       width: 100%;
     }

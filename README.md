@@ -1,6 +1,6 @@
 # projeto-hamburgueria
 
-Hamburgueria MK Burger
+MK Burger.
 Sistema de gerenciamento desenvolvido em VueJs
 
 

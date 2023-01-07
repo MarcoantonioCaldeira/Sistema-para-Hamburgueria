@@ -4,7 +4,7 @@
 
 <h2>O que as terefas desse sistema?</h2>
 
-* [O cliente pode personalizar o Hambuerger](#Sobre)
-* [Realizar pedidos](#Sobre)
-* [Mostrar os pedidos que estão sendo feitos](#Sobre)
-* [Excluir pedidos](#Sobre)
+* O cliente pode personalizar o Hambuerger
+* Realizar pedidos
+* Mostrar os pedidos que estão sendo feitos
+* Excluir pedidos

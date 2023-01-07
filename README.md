@@ -7,4 +7,4 @@
 * O cliente pode personalizar o Hambuerger
 * Realizar pedidos
 * Mostrar os pedidos que estão sendo feitos
-* Excluir pedidos
+

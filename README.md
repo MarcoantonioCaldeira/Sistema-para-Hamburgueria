@@ -2,7 +2,7 @@
 
 <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/MarcoantonioCaldeira/Sistema-de-Hamburgueria" /> <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/MarcoantonioCaldeira/Sistema-de-Hamburgueria" /> <img alt="" src="https://img.shields.io/github/repo-size/MarcoantonioCaldeira/Sistema-de-Hamburgueria" /> <img alt="Github License" src="https://img.shields.io/github/license/MarcoantonioCaldeira/Sistema-de-Hamburgueria" />
 
-<h2>O que as terefas desse sistema?</h2>
+<h2>Quais as terefas desse sistema?</h2>
 
 * O cliente pode personalizar o Hambuerger
 * Realizar pedidos

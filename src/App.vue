@@ -27,9 +27,12 @@ export default {
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
   * {
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    /* font-weight: bold; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;

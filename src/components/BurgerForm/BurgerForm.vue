@@ -1,9 +1,15 @@
 <template>
+
     <Message :msg="msg" v-show="msg" />
+
+   
+
     <div>
+
+      <h1>Vamos começar!!!</h1>
+
       <form id="burger-form" method="POST" @submit="createBurger">
         <div class="input-container">
-          <label for="nome">Nome do cliente:</label>
           <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome" required>
         </div>
         <div class="input-container">
@@ -35,7 +41,7 @@
   </template>
   
   <script>
-  import Message from './Message'
+  import Message from '../Message/Message'
   export default {
     name: "BurgerForm",
     data() {

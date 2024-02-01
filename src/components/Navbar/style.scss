@@ -1,0 +1,30 @@
+#nav{
+    background-color: rgb(224, 183, 92);
+    height:70px;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #nav{
+    margin: auto;
+    margin-left: 0;
+  }
+
+  #logo{
+    margin-left:-170vh;
+    width: 100px;
+    height: 100px;
+  }
+
+  #nav a{
+    color: #604020;
+    text-decoration:none;
+    margin:12px;
+    transition: .5s;
+  }
+
+  #nav a:hover{
+    color:#fff;
+  }

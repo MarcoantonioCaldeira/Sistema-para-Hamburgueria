@@ -9,7 +9,7 @@
 
 <script>
 
-import Dashboard from '../components/Dashboard.vue';
+import Dashboard from '../components/Dashboard/Dashboard.vue';
 
 export default{
   name: 'Pedidos',

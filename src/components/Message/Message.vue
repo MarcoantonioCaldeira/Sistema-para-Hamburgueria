@@ -13,15 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style src="./style.scss" lang="scss">
 
-.message-container{
-    color: #004085;
-    background-color: #deeeff;
-    border: 2px solid #deeeff;
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 400px;
-    margin: 30px auto;
-}
+
 </style>

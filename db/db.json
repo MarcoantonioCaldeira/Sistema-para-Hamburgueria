@@ -95,18 +95,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
-    {
-      "nome": "marco",
-      "carne": "carne.tipo",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Pepino"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    }
-  ]
+  "burgers": []
 }

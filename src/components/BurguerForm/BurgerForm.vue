@@ -60,6 +60,7 @@
         this.carnes = data.carnes;
         this.opcionaisdata = data.opcionais;
       },
+      
       async createBurger(e) {
 
         e.preventDefault();
@@ -101,56 +102,6 @@
   }
   </script>
   
-  <style scoped>
-  #burger-form {
-    max-width: 500px;
-  }
-  .input-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  label {
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #222;;
-    padding: 5px 10px;
-  }
-  input, select {
-    padding: 12px 15px;
-    width: 400px;
-  }
-  #opcionais-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #opcionais-title {
-    width: 100%;
-  }
-  .checkbox-container {
-    display: flex;
-    align-items: flex-start;
-    width: 50%;
-    margin-bottom: 20px;
-  }
-  .checkbox-container span,
-  .checkbox-container input {
-    width: auto;
-  }
-  .checkbox-container span {
-    margin-left: 6px;
-    font-weight: bold;
-  }
-  .submit-btn {
-    background-color:#a0bb82;
-    border-radius: 5px;
-    color:white;
-    font-weight: bold;
-    border: 2px solid #a0bb82;
-    padding: 15 15px;
-    font-size: 16px;
-    margin: -2%;
-    cursor: pointer;
-    transition: .5s;
-  }
+<style  src="./style.scss" lang="scss">
+  
 </style>

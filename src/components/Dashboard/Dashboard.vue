@@ -1,8 +1,9 @@
 <template>
   <div id="burger-table" v-if="burgers">
+
     <div>
       <div id="burger-table-heading">
-        <div class="order-id">#:</div>
+        <div class="order-id">id:</div>
         <div>Cliente:</div>
         <div>Pão:</div>
         <div>Carne:</div>
@@ -10,12 +11,14 @@
         <div>Ações:</div>
       </div>
     </div>
+
     <div id="burger-table-rows">
       <div class="burger-table-row" v-for="burger in burgers" :key="burger.id">
         <div class="order-number">{{ burger.id }}</div>
         <div>{{ burger.nome }}</div>
         <div>{{ burger.pao }}</div>
         <div>{{ burger.carne }}</div>
+        
         <div>
           <ul v-for="(opcional, index) in burger.opcionais" :key="index">
             <li>{{ opcional }}</li>
@@ -46,7 +49,13 @@
         status: []
       }
     },
+
+    mounted () {
+      this.getPedidos()
+    },
+
     methods: {
+
       async getPedidos() {
         const req = await fetch('http://localhost:3000/burgers')
         const data = await req.json()
@@ -54,11 +63,13 @@
         
         this.getStatus()
       },
+
       async getStatus() {
         const req = await fetch('http://localhost:3000/status')
         const data = await req.json()
         this.status = data
       },
+
       async deleteBurger(id) {
         const req = await fetch(`http://localhost:3000/burgers/${id}`, {
           method: "DELETE"
@@ -66,6 +77,7 @@
         const res = await req.json()
         this.getPedidos()
       },
+
       async updateBurger(event, id) {
         const option = event.target.value;
         const dataJson = JSON.stringify({status: option});
@@ -77,10 +89,9 @@
         const res = await req.json()
         console.log(res)
       }
-    },
-    mounted () {
-    this.getPedidos()
+
     }
+
   }
 </script>
 

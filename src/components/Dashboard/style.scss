@@ -1,6 +1,16 @@
 #burger-table {
     max-width: 1200px;
     margin: 0 auto;
+   
+    @media(max-width: 768px){
+      width: 370px;
+
+      #burger-table-heading,
+      #burger-table-rows{
+        font-size: 10px; 
+        padding: 10px;
+      }
+    }
   }
   #burger-table-heading,
   #burger-table-rows,
@@ -13,12 +23,14 @@
     font-weight: bold;
     padding: 12px;
     border-bottom: 3px solid #333;
+    opacity: 70%;
   }
   .burger-table-row {
     width: 100%;
     padding: 12px;
     border-bottom: 1px solid #CCC;
   }
+
   #burger-table-heading div,
   .burger-table-row div {
     width: 19%;
@@ -34,6 +46,8 @@
   .delete-btn {
     background-color: #ddb036;
     color:white;
+    border-radius: 15px;
+    border: 2px solid #ddb036;
     font-weight: bold;
     border-radius: 5px;
     border: 2px solid;
@@ -41,10 +55,9 @@
     font-size: 16px;
     margin: 0 auto;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
   }
   
   .delete-btn:hover {
-    background-color: transparent;
-    color: #222;
+      opacity: 0.7; 
   }

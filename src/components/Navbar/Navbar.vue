@@ -1,18 +1,9 @@
 <template> 
-   
     <header :class="{ 'scrolled-nav': scrolledNav, 'dark-mode': isDarkMode }" v-if="!isComponenteAAtivo">
-
-        <nav>
-            <div class="branding">
-                <router-link to="/" id="logo-url">
-                    <!-- <img :src="logo" :alt="alt" id="logo"> -->
-                </router-link>
-            </div>    
-
-            <ul  v-show="!mobile" class="navigation">
+        <nav> 
+            <ul v-show="!mobile" class="navigation">
                 <li><router-link  class="link" to="/">Home</router-link></li>
                 <li><router-link  class="link" to="/pedidos">Pedidos</router-link></li>
-            
             </ul>
 
             <div class="icon">
@@ -23,14 +14,8 @@
 
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
-                    <div class="responsive_branding">
-                        <router-link to="/" id="logo-url">
-                            <!-- <img :src="logo" :alt="alt" id="logo"> -->
-                        </router-link>
-                    </div>
                     <li><router-link class="link" to="/">Home</router-link></li>
-                    <li><router-link class="link" to="/pedidos">Pedidos</router-link></li>
-            
+                    <li><router-link class="link" to="/pedidos">Pedidos</router-link></li>     
                 </ul>    
             </transition>   
         </nav>

@@ -37,9 +37,15 @@ header{
       text-decoration: none;
 
       li{
-        text-transform: uppercase;
+        //text-transform: uppercase;
         padding: 10px;
         margin-left: 10px;
+      }
+
+      li:hover{
+        color: #ddb036;
+        opacity: 70%;
+        transition: 0.5s;
       }
     }
   
@@ -100,9 +106,9 @@ header{
         display: flex;
         background-color: white;
         flex-direction: column;
-        box-shadow: 0 4px 6px -1px;
+        box-shadow: 0 4px 6px -1px rgb(73, 73, 73);
         position: fixed;
-        max-width: 250px;
+        width: 250px;
         height: 100%;
         margin: 0;
         top: 0;

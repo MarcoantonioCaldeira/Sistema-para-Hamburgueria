@@ -45,7 +45,7 @@
   </template>
   
   <script>
-  import { ref, onValue } from "firebase/database";
+  import { ref, onValue, push } from "firebase/database";
   import Message from '../Message/Message';
   
   export default {
@@ -102,37 +102,36 @@
       },
 
       
-      async createBurger(e) {
-
-        e.preventDefault();
+      createBurger() {
 
         const data = {
           nome: this.nome,
           carne: this.carne,
           pao: this.pao,
-          opcionais: Array.from(this.opcionais),
+          opcionais: this.opcionais,
           status: "Solicitado"
-        }
+        };
 
-        const dataJson = JSON.stringify(data);
+        const burgersRef = ref(this.$db, 'burgers');
 
-        const req = await fetch('http://localhost:3000/burgers', {
-          method: "POST",
-          headers: { "Content-Type" : "application/json" },
-          body: dataJson
-        });
-        const res = await req.json()
-        console.log(res)
-        this.msg = "Pedido realizado com sucesso!"
-        // clear message
-        setTimeout(() => this.msg = "", 3000)
-        // limpar campos
-        this.nome = ""
-        this.carne = ""
-        this.pao = ""
-        this.opcionais = []
-        
+        push(burgersRef, data)
+
+          .then(() => {
+            this.msg = "Pedido realizado com sucesso!";
+
+            setTimeout(() => (this.msg = ""), 3000);
+
+            this.nome = "";
+            this.carne = "";
+            this.pao = "";
+            this.opcionais = [];
+          })
+          .catch((error) => {
+            console.error("Erro ao enviar o pedido:", error);
+            this.msg = "Erro ao enviar o pedido.";
+          });
       }
+
     },
 
   }

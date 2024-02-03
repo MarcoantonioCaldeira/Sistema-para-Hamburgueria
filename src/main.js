@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getDatabase } from "firebase/database";
+import { getDatabase, ref, set } from "firebase/database";
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -17,10 +16,12 @@ const firebaseConfig = {
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
-const analytics = getAnalytics(firebaseApp);
 const db = getDatabase(firebaseApp);
 
 const app = createApp(App);
+const burgersRef = ref(db, 'burgers');
+
+set(burgersRef, null);
 
 // Agora, $db aponta para a instância do Realtime Database
 app.config.globalProperties.$db = db;
